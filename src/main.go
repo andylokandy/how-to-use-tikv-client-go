@@ -13,7 +13,7 @@ func main() {
 
 func run() error {
 	driver := tikv.Driver{}
-	store, err := driver.Open("tikv://localhost:2379?cluster=1")
+	store, err := driver.Open("tikv://localhost:2379")
 	if err != nil {
 		return err
 	}
